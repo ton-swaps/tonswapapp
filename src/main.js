@@ -8,7 +8,7 @@ import numeral from 'numeral'
 
 import TonSwapOrderbook from 'tonswaplib'
 
-Vue.prototype.$swapOrderbook = new TonSwapOrderbook('0:661a85a4912ff3a1994bc4e7039ca9f14f9d8e24bb3910d657c998a931739fb3')
+Vue.prototype.$swapOrderbook = new TonSwapOrderbook('0:ee02be55dccc3ba1e7906120b635222f4c24127616c0f75ef7d30bb83b2f1a59')
 Vue.prototype.$BigInt = BigInteger
 
 Vue.use(BootstrapVue)
@@ -39,6 +39,8 @@ Vue.filter('makeTxLink', function (txid, token) {
     return '<a href="https://net.ton.live/transactions?section=details&id=' + txid + '" >' + txid + '</a>'
   } else if (token === 'ETH' || token === 'USDT') {
     return '<a href="https://ropsten.etherscan.io/tx/' + txid + '" >' + txid + '</a>'
+  } else if (token === 'BTC') {
+    return '<a href="https://live.blockcypher.com/btc-testnet/tx/' + txid + '/" >' + txid + '</a>'
   }
   return txid
 })

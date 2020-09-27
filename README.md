@@ -32,7 +32,9 @@ npm run build
 
 ### Related projects
 [Ethereum Atomic Swaps smart contracts](https://github.com/ton-swaps/ethswap)
+
 [Free TON Atomic Swaps smart contracts](https://github.com/ton-swaps/tonswapsmc)
+
 [Free TON Atomic Swaps javascript library](https://github.com/ton-swaps/tonswaplib)
 
 ### Submission
